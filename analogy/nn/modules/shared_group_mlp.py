@@ -11,9 +11,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from jacinle.logging import get_logger
-from jactorch.nn import Conv1dLayer
-from jactorch.quickstart.models import MLPModel
+from jac.jacinle.logging import get_logger
+from jac.jactorch.nn import Conv1dLayer
+from jac.jactorch.quickstart.models import MLPModel
 
 from .modules import FCResBlock
 

@@ -13,10 +13,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torchvision.models.resnet import BasicBlock, Bottleneck
 
-from jacinle.logging import get_logger
+from jac.jacinle.logging import get_logger
 
-from jactorch.nn import Conv2d
-from jactorch.quickstart.models import MLPModel
+from jac.jactorch.nn import Conv2d
+from jac.jactorch.quickstart.models import MLPModel
 
 from analogy.constant import ORIGIN_IMAGE_SIZE
 

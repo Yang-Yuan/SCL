@@ -24,14 +24,14 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 
-import jacinle.io as io
+import jac.jacinle.io as io
 
-from jacinle.logging import get_logger
-from jacinle.utils.meter import GroupMeters
-from jacinle.utils.tqdm import tqdm_pbar
-from jactorch.train import TrainerEnv
-from jactorch.train.env import default_reduce_func
-from jactorch.utils.meta import as_cuda, as_tensor, as_float, as_cpu
+from jac.jacinle.logging import get_logger
+from jac.jacinle.utils.meter import GroupMeters
+from jac.jacinle.utils.tqdm import tqdm_pbar
+from jac.jactorch.train import TrainerEnv
+from jac.jactorch.train.env import default_reduce_func
+from jac.jactorch.utils.meta import as_cuda, as_tensor, as_float, as_cpu
 
 from analogy.thutils import monitor_gradrms
 

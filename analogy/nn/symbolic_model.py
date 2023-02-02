@@ -11,10 +11,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from jacinle.logging import get_logger
+from jac.jacinle.logging import get_logger
 
-from jactorch.quickstart.models import MLPModel
-from jactorch.nn import Conv2d
+from jac.jactorch.quickstart.models import MLPModel
+from jac.jactorch.nn import Conv2d
 
 from .modules import FCResBlock, SharedGroupMLP, Expert, Scorer
 from .utils import transform

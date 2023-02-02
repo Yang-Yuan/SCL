@@ -1,4 +1,14 @@
-matplotlib == 3.1.2
+matplotlib
 tqdm
-PIL
-sklearn
+Pillow
+scikit-learn
+
+six
+Cython
+pkgconfig
+tabulate
+ipdb
+pyyaml
+pyzmq
+numpy
+scipy

@@ -12,7 +12,7 @@
 import torch
 import torch.nn.functional as F
 
-from jactorch.utils.meta import as_tensor, as_float
+from jac.jactorch.utils.meta import as_tensor, as_float
 
 __all__ = ['rms', 'monitor_saturation', 'monitor_paramrms', 'monitor_gradrms']
 

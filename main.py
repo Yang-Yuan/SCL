@@ -27,12 +27,12 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 
-from jacinle.logging import get_logger, set_output_file
-from jacinle.utils.printing import kvprint, kvformat
-from jactorch.cli import dump_metainfo
-from jactorch.data.dataloader import JacDataLoader
-from jactorch.parallel import JacDataParallel
-from jactorch.train import TrainerEnv
+from jac.jacinle.logging import get_logger, set_output_file
+from jac.jacinle.utils.printing import kvprint, kvformat
+from jac.jactorch.cli import dump_metainfo
+from jac.jactorch.data.dataloader import JacDataLoader
+from jac.jactorch.parallel import JacDataParallel
+from jac.jactorch.train import TrainerEnv
 
 from analogy.constant import MAX_VALUE
 from analogy.dataset import get_dataset_name_and_num_features, load_data
@@ -96,7 +96,7 @@ trainer_args.add_argument('--epochs', '-e', type=int, default=200,
     help='the number of epochs')
 trainer_args.add_argument('--obs-epochs', '-oe', type=int, default=5,
     help='the number of sub epochs for observation stage')
-trainer_args.add_argument('--batch-size', '-bs', type=int, default=128,
+trainer_args.add_argument('--batch-size', '-bs', type=int, default=4,
     help='input batch size for training (default: 128)')
 trainer_args.add_argument('--eval-batch-size', '-ebs', type=int, default=32,
     help='input batch size for evaluation (default: 32)')
